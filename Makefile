@@ -1,6 +1,6 @@
 default: all
 
-all: clean install run test
+all: clean install run
 
 .PHONY: clean
 clean:
