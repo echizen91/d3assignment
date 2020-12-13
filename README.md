@@ -28,6 +28,11 @@ make all
 make test
 ```
 
+### Alternatively, hosted on cloud
+```
+http://35.185.178.155:3000/
+```
+
 ### Database Schema
 ```
 CREATE DATABASE d3assignment;
