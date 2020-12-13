@@ -1,5 +1,9 @@
 # NodeJS API Assessment
-
+### NPM and Node version
+```
+nodejs: v12.19.0
+npm:    6.14.8
+```
 ### Setup
 #### Clone Repository:
 ```
