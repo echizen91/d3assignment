@@ -1,6 +1,14 @@
 default: all
 
-all: test run
+all: clean install run test
+
+.PHONY: clean
+clean:
+	rm -rf node_modules/
+
+.PHONY: install
+install:
+	npm install
 
 .PHONY: test
 test:

@@ -1,5 +1,38 @@
 # NodeJS API Assessment
 
+### Setup
+#### Clone Repository:
+```
+git clone https://github.com/echizen91/d3assignment.git
+```
+
+#### Installations:
+```
+cd d3assignment
+make install
+```
+
+#### Create config file:
+```
+cp app/config/sample.config.js app/config/db.config.js
+```
+Then fill in the database credentials and create the database with the schema below.
+
+#### Run the application:
+```
+// clean, install, run, test
+make all
+
+// start application
+make run
+
+// run test
+make test
+
+// remove node_modules
+make clean
+```
+
 ### Database Schema
 ```
 CREATE DATABASE d3assignment;
