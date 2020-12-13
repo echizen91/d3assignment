@@ -6,31 +6,22 @@
 git clone https://github.com/echizen91/d3assignment.git
 ```
 
-#### Installations:
-```
-cd d3assignment
-make install
-```
-
 #### Create config file:
 ```
+cd d3assignment
 cp app/config/sample.config.js app/config/db.config.js
 ```
 Then fill in the database credentials and create the database with the schema below.
 
-#### Run the application:
+#### Installation Run the application:
 ```
-// clean, install, run, test
+// clean, install, run
 make all
+```
 
-// start application
-make run
-
-// run test
+#### Test APIs:
+```
 make test
-
-// remove node_modules
-make clean
 ```
 
 ### Database Schema
