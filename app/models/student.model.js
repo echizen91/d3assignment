@@ -26,9 +26,17 @@ Student.getAll = result => {
         result(null, err);
         return;
       }
-  
-      console.log("students: ", res);
-      result(null, res);
+
+      if (res.length > 0) {
+        let output = [];
+        for (i=0; i<res.length; i++) {
+          output.push(res[i].email)
+        }
+        result(null, { students: output });
+        return;
+      }
+      
+      result(null, { students: []});
     });
 }
 

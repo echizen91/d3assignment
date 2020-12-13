@@ -13,7 +13,7 @@ describe('Get All Teachers', () => {
                                 return response;
                             });
         expect(response.status, 'Status Success').to.equal(200);
-        expect(Array.isArray(response.body), 'Array of emails').to.equal(true);
+        expect(Array.isArray(response.body.teachers), 'Array of emails').to.equal(true);
     });
 });
 

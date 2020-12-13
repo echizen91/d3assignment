@@ -28,8 +28,16 @@ Teacher.getAll = result => {
       return;
     }
 
-    console.log("teachers: ", res);
-    result(null, res);
+    if (res.length > 0) {
+      let output = [];
+      for (i=0; i<res.length; i++) {
+        output.push(res[i].email)
+      }
+      result(null, { teachers: output });
+      return;
+    }
+    // console.log("teachers: ", res);
+    result(null, { teachers: []});
   });
 }
 

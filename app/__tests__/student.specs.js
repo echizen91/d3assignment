@@ -13,7 +13,7 @@ describe('Get All Students', () => {
                                 return response;
                             });
         expect(response.status, 'Status Success').to.equal(200);
-        expect(Array.isArray(response.body), 'Array of emails').to.equal(true);
+        expect(Array.isArray(response.body.students), 'Array of emails').to.equal(true);
     });
 });
 
